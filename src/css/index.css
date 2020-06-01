@@ -1,0 +1,144 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;    
+}
+
+
+body{    
+    background-image: url(../assets/undraw_video_game_night_8h8m.svg);    
+    background-repeat: no-repeat;
+    background-size: 52%;
+    background-position-x: right;
+    background-position-y: 150px;
+
+}
+
+.winner{
+    background-image: url(../assets/confetti.gif);    
+}
+
+header{    
+    /* background-color: #FF6584;     */
+    padding: 20px;    
+    box-shadow: 0px 2px 5px #FF6584;
+}
+
+header h1{    
+    max-width: 600px;    
+    text-align: center;
+    font-size: 35px;
+    margin: 0px auto;
+    color: #555;
+    text-shadow: 1px 1px 1px #ccc, 2px 1px 1px #ccc, 1px 2px 1px #ccc;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    /* border-bottom: 5px solid #F50057; */
+}
+
+.top{
+    text-align: left;
+    margin-top: 40px;    
+    margin-bottom: 20px;
+}
+
+.top button{
+    border: none;
+    width: 250px;
+    height: 50px;
+    background-color: #F50057;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+.top button:hover{
+    background-color: #3F3D56;
+    box-shadow: 0px 0px 4px rgb(51, 51, 51) inset;
+    border-radius: 0 40px 40px 0px;
+}
+
+
+
+.tablero{
+
+    width: 30%;
+    min-width: 400px;
+    margin: 0px auto 0px 200px;     
+    box-shadow: 1px 1px 2px #3F3D56, 2px 1px 2px #3F3D56, 4px 3px 3px #3F3D56;
+    background-color: #fff;
+    
+    /* grid */
+    grid-area: tablero;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.caja:first-child{
+    height: 0px;        
+    padding-bottom: 100%;
+}
+
+.caja{
+    border: 2px solid #555;    
+    text-align: center;
+    line-height: 115px;
+    display: block;
+    transition: all 300ms;
+    cursor: pointer;
+}
+
+.caja:hover{    
+    box-shadow: 0px 0px 40px #555 inset;
+
+}
+
+.icon{
+    font-size: 50px;
+    margin-top: 10px;
+    display: block;
+}
+
+.players{
+    position: absolute;
+    left: 10px;
+    top: 220px;
+}
+
+.io{
+    font-size: 27px;
+    color: #555;
+}
+
+.ix{
+    font-size: 40px;
+    color: #555;
+}
+
+.ix span, .io span{
+    font-size: 20px;
+    color: #F50057;    
+    padding: 10px;
+}
+
+.player-Winner{
+    position: absolute;
+    right: 220px;
+    top: 320px;
+    transition: all 300ms ease-in;
+}
+
+.player-Winner h3{
+    padding: 30px;
+    font-size: 23px;
+    text-transform: uppercase;
+    background-color: #F50057;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px #555, 2px 1px 2px #555, 3px 3px 2px #555;
+    transition: all 300ms all;
+}
